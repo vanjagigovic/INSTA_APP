@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+
+<div class="contact-page">
+    <div class="contact-header">
+        <h2>Contact Us</h2>
+        <p>Leave us a message</p>
+        <img src="~/Image/message.png" width="100" height="100"/>
+    </div>
+    <hr />
+    <div class="form-horizontal">
+        <h1>You can use the form below to send us a message</h1>
+        <form class="form-group">
+            <label class="control-label col-md-10" for="fname">First name</label>
+            <div class="col-md-10 ">
+                <input type="text" id=" fname" name="firstname" placeholder=" Yor name" />
+            </div>
+
+
+            <label class="control-label col-md-10" for="lname">Last name</label>
+            <div class="col-md-10 ">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+
+            <label class="control-label col-md-10" for="e-mail">Email</label>
+            <div class="col-md-10 ">
+                <input type="text" id="e-mail" name="e-mail" placeholder="Email" />
+            </div>
+
+
+            <label class="control-label col-md-10" for="country">Country</label>
+            <div class="col-md-10 ">
+                <select id="country" name="country">
+                    <option value="bosnia">Bosnia and Hercegovina</option>
+                    <option value="serbia">Serbia</option>
+                    <option value="croatia">Croatia</option>
+                    <option value="montenegro">Montenegro</option>
+                    <option value="slovenia">Slovenia</option>
+                </select>
+            </div>
+
+
+            <label class="control-label col-md-10" for="subject">Subject</label>
+            <div class="col-md-10 ">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            </div>
+            <div class="col-md-10 ">
+                <input type="submit" value="Send message" class="btn-create " />
+                </div>
+        </form>
+    </div>
+</div>
+
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="eb498e020cf340ef9a4bf78bbc03e8c1" Name="Diagram1">
+        <EntityTypeShape EntityType="INSTA_APPModel.C__MigrationHistory" Width="1.5" PointX="7.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="INSTA_APPModel.AspNetRole" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="INSTA_APPModel.AspNetUserClaim" Width="1.5" PointX="5.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="INSTA_APPModel.AspNetUserLogin" Width="1.5" PointX="5.25" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="INSTA_APPModel.AspNetUser" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="INSTA_APPModel.kategorija" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="INSTA_APPModel.komentar" Width="1.5" PointX="7.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="INSTA_APPModel.lajk" Width="1.5" PointX="7.5" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="INSTA_APPModel.objava" Width="1.5" PointX="5.25" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="INSTA_APPModel.profil" Width="1.5" PointX="3" PointY="2" IsExpanded="true" />
+        <AssociationConnector Association="INSTA_APPModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="INSTA_APPModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="INSTA_APPModel.FK_profil_kategorija" ManuallyRouted="false" />
+        <AssociationConnector Association="INSTA_APPModel.FK_komentar_objava" ManuallyRouted="false" />
+        <AssociationConnector Association="INSTA_APPModel.FK_lajk_objava" ManuallyRouted="false" />
+        <AssociationConnector Association="INSTA_APPModel.FK_objava_profil" ManuallyRouted="false" />
+        <AssociationConnector Association="INSTA_APPModel.AspNetUserRoles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="INSTA_APPModel.sysdiagram" Width="1.5" PointX="10.375" PointY="0.75" />
+        <EntityTypeShape EntityType="INSTA_APPModel.poklon" Width="1.5" PointX="10.375" PointY="3.75" />
+        <EntityTypeShape EntityType="INSTA_APPModel.poklon_za_profil" Width="1.5" PointX="10.375" PointY="6.75" />
+        <AssociationConnector Association="INSTA_APPModel.FK_poklon_za_profil_poklon" />
+        <AssociationConnector Association="INSTA_APPModel.FK_poklon_za_profil_profil" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

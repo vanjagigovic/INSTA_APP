@@ -1,0 +1,77 @@
+﻿
+@model IEnumerable<INSTA_APP.Models.profil>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table" style="border:1px solid #a43ebd; background:#e7e7e7;">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.prezime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.website)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pol)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.telefon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.broj_pratilaca)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.datum_rodjenja)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.kategorija.naziv)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.prezime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.website)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telefon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.broj_pratilaca)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.datum_rodjenja)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.kategorija.naziv)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.IDkorisnicko_ime }) |
+                @Html.ActionLink("Details", "Details", new { id = item.IDkorisnicko_ime }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.IDkorisnicko_ime })
+            </td>
+        </tr>
+    }
+
+</table>
